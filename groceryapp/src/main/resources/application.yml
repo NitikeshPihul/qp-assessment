@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: groceryapp
+  datasource:
+    url: jdbc:mysql://localhost:3306/groceryappdb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#  mvc:
+#    servlet:
+#      path: /api
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
